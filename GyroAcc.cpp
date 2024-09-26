@@ -43,7 +43,7 @@ void loop(){
     Serial.print("Accelerometer X-value = "); Serial.print(Ax);
     Serial.print("Accelerometer Y-value = "); Serial.print(Ay);
     Serial.print("Accelerometer Z-value = "); Serial.print(Az);
-    Serial.print("Temperature value = "); Serial.print(Temp);
+    Serial.print("Temperature value = "); Serial.print(Temp/340.00+36.53); //Equation for temperature taken from MPU6050 Temp Measurement (page 30)
     Serial.print("Gyroscope X-value = "); Serial.print(Gx);
     Serial.print("Gyroscope Y-value = "); Serial.print(Gy);
     Serial.print("Gyroscope Z-value = "); Serial.print(Gz);
