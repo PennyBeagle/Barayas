@@ -1,3 +1,5 @@
+//Gyroscope and Accelerometer
+
 #include <Wire.h>
 
 //Next 4 lines initializes the I2C address of the MPU-6050 + the XYZ variables of the ACC, GYRO, and TEMP data

@@ -1,3 +1,5 @@
+//IR Sensor
+
 //Variable definitions
 const int LED = 2; //LED is on pin 2
 const int IR = 3; //IR Sensor is on pin 3
@@ -21,5 +23,5 @@ void loop(){
         digitalWrite(LED, LOW); //Turns the LED off
     }
 
-    delay(1000); //A delay, as a treat
+    delay(1000); //Delay to prevent inputs stacking up. Yippee!
 }
