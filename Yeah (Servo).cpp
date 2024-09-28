@@ -11,7 +11,7 @@ void setup(){
     Serial.begin(9600);
 
     wiringPiSetup(); //Initializes wiringPi
-    pinMode(Servo, OUTPUT);
+    GPIO.pinMode(Servo, GPIO.OUTPUT);
     softPwmCreate(Servo, 0, 180); //Creates the softPwm pin, sets the initial value to 0 with a range of 180
 }
 

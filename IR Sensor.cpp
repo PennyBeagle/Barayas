@@ -1,8 +1,8 @@
 //IR Sensor
 
 //Variable definitions
-const int LED = 2; //LED is on pin 2
-const int IR = 3; //IR Sensor is on pin 3
+const int LED = 3; //LED is on pin 3
+const int IR = 4; //IR Sensor is on pin 4
 
 void setup(){
 
