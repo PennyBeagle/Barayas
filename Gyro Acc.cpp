@@ -1,4 +1,4 @@
-//Gyroscope and Accelerometer
+//Gyroscope and Accelerometer :D
 
 #include <wiringPi.h> //Library for C++ on Raspberry Pi (deals with GPIO's)
 #include <wiringPiI2C.h> //Library for I2C connections on Raspberry Pi

@@ -1,4 +1,4 @@
-//Linear Actuator
+//Linear Actuator (with GPIO commands to help Raspberry Pi?) :D
 
 #include <wiringPi.h> //Library for C++ on Raspberry Pi (deals with GPIO's)
 

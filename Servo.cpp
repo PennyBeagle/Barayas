@@ -1,4 +1,4 @@
-//Servo Motors
+//Servo Motors :D
 
 #include <wiringPi.h> //Library for C++ on Raspberry Pi (deals with GPIO's)
 #include <softPwm.h> //Library for PWM pins (to control the Servo easier)

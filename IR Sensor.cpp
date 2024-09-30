@@ -1,4 +1,4 @@
-//IR Sensor
+//IR Sensor :D
 
 //Variable definitions
 const int LED = 3; //LED is on pin 3

@@ -1,4 +1,4 @@
-//Gyroscope and Accelerometer
+//Gyroscope and Accelerometer :D
 
 #include <Wire.h>
 

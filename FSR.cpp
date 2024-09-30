@@ -1,4 +1,4 @@
-//Force Sensing Resistor
+//Force Sensing Resistor :D
 
 //Variable definitions
 const int FSR = 5; //FSR is on pin 5
