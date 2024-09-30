@@ -1,11 +1,17 @@
 //Linear Actuator
 
+#include <wiringPi.h> //Library for C++ on Raspberry Pi (deals with GPIO's)
+
+//Variable definitions
+const int 1 = 1; //Defining pin 1
+const int 2 = 2; //Defining pin 2
+
 void setup(){
     GPIO.pinMode(1, GPIO.OUTPUT); //Pin 1 is now an output
     GPIO.pinMode(2, GPIO.OUTPUT); //Pin 2 is now an output
 
-    digitalWrite(1, GPIO.HIGH); //Sets pin 1 to Low
-    digitalWrite(2, GPIO.HIGH); //Sets pin 2 to Low
+    digitalWrite(1, GPIO.HIGH); //Initializes pin 1 as Low
+    digitalWrite(2, GPIO.HIGH); //Initializes pin 2 as Low
 }
 
 void(loop){

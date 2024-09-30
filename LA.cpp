@@ -1,11 +1,15 @@
 //Linear Actuator
 
+//Variable definitions
+const int 1 = 1; //Defining pin 1
+const int 2 = 2; //Defining pin 2
+
 void setup(){
     pinMode(1, OUTPUT); //Pin 1 is now an output
     pinMode(2, OUTPUT); //Pin 2 is now an output
 
-    digitalWrite(1, HIGH); //Sets pin 1 to Low
-    digitalWrite(2, HIGH); //Sets pin 2 to Low
+    digitalWrite(1, HIGH); //Initializes pin 1 as Low
+    digitalWrite(2, HIGH); //Initializes pin 2 as Low
 }
 
 void(loop){

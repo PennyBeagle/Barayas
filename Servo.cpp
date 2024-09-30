@@ -7,7 +7,6 @@
 const int Servo = 0; //Servo is on pin 0
 
 void setup(){
-
     Serial.begin(9600);
 
     wiringPiSetup(); //Initializes wiringPi
