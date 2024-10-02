@@ -19,9 +19,9 @@ void loop(){
     
     if((Base == LOW) && (FSR == HIGH)){
         //Prints message if last reading was low and current reading is high (pressure is being applied)
-        Serial.print("Pressure is being applied.");
+        Serial.println("Pressure is being applied.");
     }
-    Base = Read;
+    Base = FSR;
 
     delay(1000); //One second delay :3
 }
