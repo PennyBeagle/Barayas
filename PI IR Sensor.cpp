@@ -1,24 +1,25 @@
-//IR Sensor :D
+//IR Sensor (with GPIO commands to help Raspberry Pi?) :D
+
+#include <wiringPi.h> //Library for C++ on Raspberry Pi (deals with GPIO's)
 
 //Variable definitions
 const int IR = 4; //IR Sensor is on pin 4
 
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600); //Opens serial port & sets data rate to 9600 bps
-  pinMode(IR, INPUT); //Sets IR Sensor as the input
+//If this thing doesn't work change the "pinMode" to "setup" and the "GPIO.INPUT"/"GPIO.OUTPUT" to "GPIO.IN"/"GPIO.OUT"
+void setup(){
+    Serial.begin(9600); //Opens serial port & sets data rate to 9600 bps
+    GPIO.pinMode(IR, GPIO.INPUT); //Sets IR Sensor as the input
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-  int thing = digitalRead(IR); //Thing is equal to the current state of the IR Sensor
+void loop(){
+    int thing = digitalRead(IR); //Thing is equal to the current state of the IR Sensor
 
-    if (thing == LOW) {
-        Serial.println(thing); //Gives an indicator that this works
+    if (thing == GPIO.LOW) {
+        Serial.println(thing); //Prints the value. Gives an indicator that this works
     }
 
     else {
-        Serial.println(thing); //Gives an indicator that this works
+        Serial.println(thing); //Prints the value. Gives an indicator that this doesn't work
     }
 
     delay(1000); //Delay to prevent inputs stacking up. Yippee!

@@ -74,12 +74,12 @@ void loop(){
     //Okay onto the actual stuff that isn't just torturing myself with the MPU6050 Document
     //Let's start printing everything out
 
-    Serial.print("Accelerometer X-value = "); Serial.print(Ax);
-    Serial.print("Accelerometer Y-value = "); Serial.print(Ay);
-    Serial.print("Accelerometer Z-value = "); Serial.print(Az);
-    Serial.print("Gyroscope X-value = "); Serial.print(Gx);
-    Serial.print("Gyroscope Y-value = "); Serial.print(Gy);
-    Serial.print("Gyroscope Z-value = "); Serial.print(Gz);
+    Serial.println("Accelerometer X-value = "); Serial.println(Ax);
+    Serial.println("Accelerometer Y-value = "); Serial.println(Ay);
+    Serial.println("Accelerometer Z-value = "); Serial.println(Az);
+    Serial.println("Gyroscope X-value = "); Serial.println(Gx);
+    Serial.println("Gyroscope Y-value = "); Serial.println(Gy);
+    Serial.println("Gyroscope Z-value = "); Serial.println(Gz);
 
     //A cute little delay as a treat
     delay(1000);

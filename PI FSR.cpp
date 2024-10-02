@@ -1,14 +1,16 @@
-//Force Sensing Resistor :D
+//Force Sensing Resistor (with GPIO commands to help Raspberry Pi?) :D
+
+#include <wiringPi.h> //Library for C++ on Raspberry Pi (deals with GPIO's)
 
 //Variable definitions
 const int FSR = 5; //FSR is on pin 5
 int val = 0; //Variable to store the read values
 
 void setup(){
-    setmode(BCM); //Sets the GPIO pins to BCM mode
-    pinMode(FSR, INPUT); //Sets FSR as the input (detects the force being applied)
+    GPIO.setmode(GPIO.BCM); //Sets the GPIO pins to BCM mode
+    GPIO.pinMode(FSR, GPIO.INPUT); //Sets FSR as the input (detects the force being applied)
     
-    digitalWrite(FSR, HIGH); //Initializes FSR as Low
+    digitalWrite(FSR, GPIO.HIGH); //Initializes FSR as Low
 }
 
 void loop(){
