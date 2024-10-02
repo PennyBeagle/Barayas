@@ -1,8 +1,8 @@
 //Linear Actuator :D
 
 //Variable definitions
-const int one = 1; //Defining pin 1
-const int two = 2; //Defining pin 2
+const int one = 1; //Defining one as pin 1
+const int two = 2; //Defining two as pin 2
 
 void setup(){
     pinMode(one, OUTPUT); //Pin 1 is now an output
@@ -13,19 +13,19 @@ void setup(){
 }
 
 void loop (){
-    //Extension - This is just an initial setup. If 1 = Low and 2 = High, the LA extends
+    //Extension - This is just an initial setup. If one = Low and two = High, the LA extends
     Serial.println(one, LOW);
     Serial.println(two, HIGH);
 
     delay(1000); //We are indeed chilling
 
-    //Stop - If both 1 and 2 = High, the LA stops moving
+    //Stop - If both one and two = High, the LA stops moving
     Serial.println(one, HIGH);
     Serial.println(two, HIGH);
 
     delay(1000); //Again. Chillin'
 
-    //Retraction - If 1 = High and 2 = Low, the LA retracts
+    //Retraction - If one = High and two = Low, the LA retracts
     Serial.println(one, HIGH);
     Serial.println(two, LOW);
 
