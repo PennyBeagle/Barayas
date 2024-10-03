@@ -19,7 +19,7 @@
 #define SixNine     0x45
 #define SevenOne    0x47
 
-int16_t P; //P stands for placeholder. I have fun here.
+int P; //P stands for placeholder. I have fun here.
 
 void MPU6050(){
     wiringPiI2CWriteReg8(P, TwoFive, 0x07); //Writes to address 25 (SMPLRT_DIV, sample rate register)
