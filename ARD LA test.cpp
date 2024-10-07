@@ -32,14 +32,14 @@ void setup(){
     Serial.begin (9600);
 }
 
-int thingfromthePI = 1;
+int thingfromthePI = 1; //THIS IS TEMPORARY AND WILL BE CHANGED LATER!!!!!!!!!!!!!!!!!!!!!
 
 void loop (){
 /*  if(serial.avaliable() > 0){
         comm = Serial.read();}
 */
     switch(thingfromthePI){
-        case(1): {
+        case(1): { //Walk
             //GROUP ONE: 1 (one, two), 3 (five, six), 5 (nine, ten), 7 (thirteen, fourteen)
 
             //Extension - (1, 3, 5, 7)
@@ -89,8 +89,20 @@ void loop (){
             break;
             } //Ends case 1
 
-        case (0): {
-            //yeah
+        case (0): { //Stand
+            //Stopping - (1, 3, 5, 7)
+            stop(one, two);
+            stop(five, six);
+            stop(nine, ten);
+            stop(thirteen, fourteen);
+            delay(1000);
+
+            //Stopping - (2, 4, 6, 8)
+            stop(three, four);
+            stop(seven, eight);
+            stop(eleven, twelve);
+            stop(fifteen, sixteen);
+            delay(1000);
             break;
             }
 
