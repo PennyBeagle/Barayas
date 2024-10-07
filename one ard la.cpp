@@ -1,4 +1,4 @@
-//Linear Actuator :D
+//Linear Actuator - one, now defunct
 
 //Variable definitions
 const int one = 24; //Defining one as pin 24
