@@ -1,4 +1,6 @@
 //Variable definitions
+    char conn = '\0'; //Connection variable
+   
     const int one = 24;
     const int three = 25;
     const int five = 26;

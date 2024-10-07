@@ -32,13 +32,12 @@ void setup(){
     Serial.begin (9600);
 }
 
-int thingfromthePI = 1; //THIS IS TEMPORARY AND WILL BE CHANGED LATER!!!!!!!!!!!!!!!!!!!!!
-
 void loop (){
-/*  if(serial.avaliable() > 0){
-        comm = Serial.read();}
-*/
-    switch(thingfromthePI){
+if (Serial.available() > 0){
+    conn = Serial.read(); //Read connection variable
+    }
+
+    switch(conn){
         case(1): { //Walk
             //GROUP ONE: 1 (one, two), 3 (five, six), 5 (nine, ten), 7 (thirteen, fourteen)
 
