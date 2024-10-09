@@ -23,9 +23,9 @@ def MPU6050():
     bus.write_byte_data(MPU, TwoSeven, 24) #    Writes to addres 27 (GYRO_CONFIG, gyro configuration register)
     bus.write_byte_data(MPU, FiveSix, 1) #      Writes to address 56 (INT_ENABLE, interrupt enable register)
 
-def read(addr):
-    high = bus.read_byte_data(MPU, addr)
-    low = bus.read_byte_data(MPU, addr + 1)
+def read(this):
+    high = bus.read_byte_data(MPU, this)
+    low = bus.read_byte_data(MPU, this + 1)
 
     value = ((high << 8) | low)
 
