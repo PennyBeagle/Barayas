@@ -1,7 +1,7 @@
 # Gyroscope and Accelerometer :D
 
-import smbus            #imports I2C stuff
-from time import sleep  #gives us our delay
+import smbus            #   Imports I2C stuff
+from time import sleep  #   Gives us our delay
 
 # All of these are pulled from the MPU6050 document. The name is the value in decimal, and the other is the value in hexidecimal
 OneOneSeven = 0x6B
