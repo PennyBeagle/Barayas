@@ -9,7 +9,7 @@ GPIO.setmode(GPIO.BCM) #    Tells the PI to be in BCM mode
 GPIO.setup(4, GPIO.IN) # Sets GPIO 4 as an input
 
 while 1: # Loops forever
-    if(GPIO.input(4) == False): # Object is nearby to be detectedNo object is nearby to be detected
+    if(GPIO.input(4) == False): # Object is nearby to be detected
         print("Object detected!")
         sleep(0.2)        
 
