@@ -26,7 +26,7 @@ void loop() {
     worm = digitalRead(22); //on & off button
     delay (4000); //4 second delay
 
-    while (worm = 1){
+    while (worm == 1){
   //SERVO STUFF
   for (int servo = 0; servo < 3; servo++ ) { //Begins at servo 0, goes until servo 2
     for (int i = 0; i < servoMIN; i+= 50){
